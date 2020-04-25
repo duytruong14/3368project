@@ -81,7 +81,7 @@ Search for customer first name<input type="text" placeholder="Customer name..." 
         var row;
         row = table.getElementsByTagName("tr");
         var cell, textValue;
-        for (var i = 0; i < row.length; i++) {cell = row[i].getElementsByTagName("td")[0];
+        for (var i = 1; i < row.length; i++) {cell = row[i].getElementsByTagName("td")[0];
             if (cell) {
                 textValue = cell.textContent  ;
                 if (textValue.toUpperCase().indexOf(input2) > -1) {
